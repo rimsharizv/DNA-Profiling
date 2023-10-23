@@ -1,0 +1,28 @@
+*********************************************************
+ourvector<i> stats:
+ # of vectors created:   13
+ # of elements inserted: 36
+ # of elements accessed: 41
+*********************************************************
+*********************************************************
+ourvector<7Profile> stats:
+ # of vectors created:   1
+ # of elements inserted: 4
+ # of elements accessed: 39
+*********************************************************
+*********************************************************
+ourvector<c> stats:
+ # of vectors created:   11
+ # of elements inserted: 210
+ # of elements accessed: 196
+*********************************************************
+*********************************************************
+ourvector<9ourvectorIcE> stats:
+ # of vectors created:   1
+ # of elements inserted: 3
+ # of elements accessed: 0
+*********************************************************
+
+The vectors I created are ourvector<ourvector<char>> - a vector of vectors to store all str values, it has been accessed by load strs (to load all the STRs from the text file into appropriate container), process functions, display functions, load database and load dna functions. This is because all functions require str functions to process
+ourvector<Profile> people is a struct with variable name people. It has been passed around and accessed by all functions as all of them require me to search for the people and their str counts. Inside this struct ourvector<int> number is called. This is to create a vector of integer values to store the count for each person.
+In addition, ourvector<char> strs is used for all str sequences. This is then used to compare with dna sequences and also search command in order to determine which str belongs to whom. 
